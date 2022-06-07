@@ -26,10 +26,6 @@ class Solution(object):
         head = res
         print("3", res)    
         while list1 and list2:
-            # print(list1.val)
-            # list1 = list1.next
-            # print(list2.val)
-            # list2 = list2.next
             if list1.val <= list2.val:
                 res.next = list1
                 list1 = list1.next
@@ -38,13 +34,7 @@ class Solution(object):
                 res.next = list2
                 res = res.next
                 list2 = list2.next
-        while list1:
-            res.next = list1
-            res = res.next
-            list1 = list1.next
-        while list2:
-            res.next = list2
-            res = res.next
-            list2 = list2.next
+        if list1 or list2:
+            res.next = list1 if list1 else list2
         print(head)
         return head
