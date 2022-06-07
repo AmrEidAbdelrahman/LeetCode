@@ -10,8 +10,6 @@ class Solution(object):
         :type list2: Optional[ListNode]
         :rtype: Optional[ListNode]
         """
-        print(list1)
-        print(list2)
         if not list1:
             return list2
         if not list2:
@@ -24,7 +22,6 @@ class Solution(object):
             list2 = list2.next
         res.next = None
         head = res
-        print("3", res)    
         while list1 and list2:
             if list1.val <= list2.val:
                 res.next = list1
@@ -36,5 +33,4 @@ class Solution(object):
                 list2 = list2.next
         if list1 or list2:
             res.next = list1 if list1 else list2
-        print(head)
         return head
