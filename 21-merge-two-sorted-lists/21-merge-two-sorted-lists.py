@@ -14,12 +14,6 @@ class Solution(object):
             return list2
         if not list2:
             return list1
-        # if list1.val <= list2.val:
-        #     res = list1
-        #     list1 = list1.next
-        # else:
-        #     res = list2
-        #     list2 = list2.next
         res = ListNode(0)
         head = res
         while list1 and list2:
