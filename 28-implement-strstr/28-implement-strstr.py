@@ -5,9 +5,10 @@ class Solution(object):
         :type needle: str
         :rtype: int
         """
-        
-        for i in range(0, len(haystack)):
-            if (needle == haystack[i:i+len(needle)]):
-                return i
-        return -1
+        res = next((i for i in range(0, len(haystack)) if needle == haystack[i:i+len(needle)]), -1)
+        return res
+        # for i in range(0, len(haystack)):
+        #     if (needle == haystack[i:i+len(needle)]):
+        #         return i
+        # return -1
         
