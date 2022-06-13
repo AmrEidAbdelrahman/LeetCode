@@ -17,7 +17,6 @@ class Solution(object):
                 except:
                     return False
                 if not (ord(s[i]) == ord(x)+1 or ord(s[i]) == ord(x)+2):
-                    print(x)
                     return False
         if len(stack) > 0:
             return False
