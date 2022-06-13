@@ -21,9 +21,4 @@ class Solution(object):
                     return False
         if len(stack) > 0:
             return False
-            # if s[i] == '[' and s[i+1] != ']':
-            #     return False
-            # if s[i] == '{' and s[i+1] != '}':
-            #     return False
-            # print(i)
         return True
