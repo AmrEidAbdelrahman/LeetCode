@@ -6,6 +6,8 @@ class Solution(object):
         """
         stack = []
         x = True
+        if len(s)%2 != 0:
+            return False
         for i in range(0, len(s)):
             if s[i] in ['(', '[', '{']:
                 stack.append(s[i])
