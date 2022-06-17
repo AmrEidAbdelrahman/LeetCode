@@ -1,10 +1,6 @@
 # Write your MySQL query statement below
-SELECT RES.customer_number
-FROM (
-    SELECT customer_number ,count(order_number) as counter
-    FROM Orders
-    GROUP BY customer_number
-    ORDER BY counter desc
-    LIMIT 1    
-    ) as RES
-
+SELECT customer_number
+FROM Orders
+GROUP BY customer_number
+ORDER BY count(order_number) desc
+LIMIT 1
