@@ -14,4 +14,6 @@ class Solution(object):
                 if nums[i] < target and nums[i] > maxi:
                     maxi = nums[i]
                     pos = i + 1
+            if nums[i] > target:
+                return pos
         return pos
