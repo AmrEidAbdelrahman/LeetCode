@@ -11,4 +11,7 @@ class Solution(object):
         # for i in range(0, abs(num2)):
         #     num1 = num1 - 1 if neg else num1 + 1
         # return num1
-        return num1 + num2
+        
+        # return num1 + num2
+        
+        return num1.__add__(num2)
