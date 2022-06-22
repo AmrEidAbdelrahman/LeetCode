@@ -10,4 +10,7 @@ class Solution(object):
         #     res[i] = nums[i]
         #     res[nums_len+i] = nums[i]
         # return res
-        return nums * 2
+        
+        # return nums * 2
+        
+        return nums + nums
