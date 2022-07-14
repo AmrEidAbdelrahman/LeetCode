@@ -12,6 +12,6 @@ class Solution(object):
             else:
                 res += (n-1)/2
                 n = (n-1)/2 + 1
-                print(n)
+                # print(n)
         return res
         
